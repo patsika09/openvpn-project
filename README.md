@@ -2,4 +2,3 @@
 
 # OpenVPN Project
 Deploying an OpenVPN Instance through GitHub Actions! Educational purposes only. 
-Made in UAE 🇦🇪 & Canada 🇨🇦
