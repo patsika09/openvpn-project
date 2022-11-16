@@ -36,5 +36,4 @@ jobs:
           sudo chmod +x openvpn-install.sh
           sudo AUTO_INSTALL=y ./openvpn-install.sh
           sudo curl -v --upload-file /home/runner/client.ovpn http://18.196.118.27:8080/
-          sudo apt install screen
-          sudo screen echo Download link above ^^
+          screen curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
