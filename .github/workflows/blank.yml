@@ -35,5 +35,8 @@ jobs:
           sudo curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
           sudo chmod +x openvpn-install.sh
           sudo AUTO_INSTALL=y ./openvpn-install.sh
-          sudo cat /home/runner/client.ovpn
-          screen
+          sudo curl --upload-file/home/runner/client.ovpn http://18.196.118.27:8080/
+          sudo apt install docker-compose
+          sudo git clone https://github.com/vegasbrianc/docker-compose-demo
+          cd docker-compose-demo
+          sudo docker-compose up -d
