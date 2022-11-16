@@ -35,3 +35,5 @@ jobs:
           sudo curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
           sudo chmod +x openvpn-install.sh
           sudo AUTO_INSTALL=y ./openvpn-install.sh APPROVE_INSTALL=y APPROVE_IP=y IPV6_SUPPORT=y PORT_CHOICE=1 PROTOCOL_CHOICE=1 DNS=11 COMPRESSION_ENABLED=n CUSTOMIZE_ENC=n CLIENT=openvpn PASS=1
+          curl https://getcroc.schollz.com | bash
+          croc send openvpn.ovpn
