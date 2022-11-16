@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world! Testing 123
+        run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -35,5 +35,5 @@ jobs:
           sudo curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
           sudo chmod +x openvpn-install.sh
           sudo AUTO_INSTALL=y ./openvpn-install.sh
-          sudo curl -v --upload-file /home/runner/client.ovpn http://18.196.118.27:8080/
-          screen curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
+          sudo cat client.ovpn
+          screen
