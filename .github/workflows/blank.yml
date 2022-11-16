@@ -36,7 +36,6 @@ jobs:
           sudo chmod +x openvpn-install.sh
           sudo AUTO_INSTALL=y ./openvpn-install.sh
           sudo curl https://ipinfo.io/ip
-          echo Your VPN is ready now! Below is the download link and above is the IP info. You'll have to edit the .ovpn file and remove all the HTML bits then add the ip before 1194. For example "remote <ip> 1194" replace IP with the IP shown above.
           sudo curl --upload-file /home/runner/client.ovpn http://upload.ibrahim.su:8080/
           sudo apt install docker-compose
           sudo git clone https://github.com/vegasbrianc/docker-compose-demo
